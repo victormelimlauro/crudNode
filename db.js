@@ -17,4 +17,8 @@ function insertAlunos(alunos, callback){
     global.conn.collection("alunos").insert(alunos, callback);
 }
 
-module.exports = { findAll, deleteAlunos, insertAlunos }
+function updateAlunos(id, alunos, callback){
+        global.conn.collection("alunos").update({_id:ObjectId(id)}, alunos, callback)
+}
+
+module.exports={findAll, deleteAlunos, insertAlunos, updateAlunos};
