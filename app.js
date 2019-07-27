@@ -32,7 +32,7 @@ app.use('/clientes', clientesRouter);
 app.use('/produtos', produtosRouter);
 app.use('/alunos', alunosRouter);
 app.use('/alunos/new', alunosNewRouter);
-app.use('alunos/edit', alunosNewRouter);
+app.use('/alunos/edit', alunosNewRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
